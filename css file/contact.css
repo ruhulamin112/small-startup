@@ -1,0 +1,75 @@
+body{
+display: grid;
+min-height: 100vh;
+
+}
+
+.hero{
+align-self: start;
+
+}
+
+.footerwrapper{
+
+align-self: end;
+
+
+}
+
+.text{
+
+font-family: var(--font-2);
+font-size: var(--sub);
+
+}
+/**
+*! Style rules for sectiontwo
+ **/
+.form{
+
+display: flex;
+flex-direction: column;
+
+}
+.submit-btn{
+
+margin-top: 10px;
+
+
+}
+
+label{
+
+font-family: var(--font-2);
+font-size: var(--sub);
+}
+
+input,
+textarea{
+
+padding: 10px 20px;
+margin: 8px 0;
+border-radius: 3px;
+background-color: #eeeeee;
+
+border: 1.5px solid #212529;
+}
+
+@media(max-width:1024px){
+.grid{
+grid-template-columns: repeat(1,1, 1fr);
+
+
+}
+.sectiontwo__left{
+
+order: 1;
+}
+
+.sectiontwo__right{
+
+order: 0;
+
+}
+
+}

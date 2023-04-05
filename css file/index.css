@@ -1,0 +1,219 @@
+/**
+*! style rules for sectionone
+**/
+
+.sectionone__left--text{
+
+font-size: var(--body);
+font-family: var(--font-2);
+color: var(--color-white-75);
+}
+
+.sectionone__left--btn {
+
+align-self: start;
+
+
+}
+
+
+/**
+*! style rules for sectiontwo
+**/
+
+.sectiontwo{
+padding: 40px 0px;
+display: grid;
+gap: 30px;
+}
+
+
+
+.sectiontwo__content--text{
+font-family: var(--font-2);
+ font-size: var(--sub);
+
+}
+
+.sectiontwo__logo {
+display: grid;
+grid-template-columns: repeat(5,1fr);
+
+}
+
+.sectiontwo__logo img{
+
+justify-self: center;
+align-self: center;
+
+
+}
+
+.sectiontwo__btn{
+
+justify-self: center;
+
+}
+
+
+
+/**
+*! style rules for sectionthree
+**/
+
+.sectionthree__right--text{
+
+color: var(--color-dark-50);
+
+font-family: var(--font-2);
+font-size: var(--body);
+}
+
+.sectionthree__right--btn{
+
+align-self: start;
+margin-top: 10px;
+}
+
+
+/**
+*! style rules for sectionfour
+**/
+.sectionfour__left--text{
+    color: var(--color-dark-50);
+
+    font-family: var(--font-2);
+    font-size: var(--body);
+    }
+
+
+    .sectionfour__left--btn{
+
+        align-self: start;
+        margin-top: 10px;
+
+    }
+
+
+/**
+*! style rules for sectionfive
+**/
+
+.sectionfive{
+
+display: grid;
+gap: 30px;
+margin-top: 15px;
+margin-bottom: 30px;
+}
+
+
+
+.sectionfive__content--text{
+
+font-family: var(--font-2);
+font-family: var(--sub);
+
+}
+
+.sectionfive__cards{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 30px;
+}
+
+
+[class ^="sectionfive__cards--"]{
+
+box-shadow: var(--shadow-1) ;
+padding: 20px 25px ;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+[class ^="sectionfive__cards--"].name {
+
+font-family: var(--font-1);
+
+font-size: var(--h5);
+font-weight: bold;
+}
+[class ^="sectionfive__cards--"].position{
+font-family: var(--font-2);
+color: var(--color-dark-75);
+text-transform: uppercase;
+}
+
+.sectionfive__btn{
+justify-self:center;
+
+}
+
+@media (max-width:1200px){
+
+.sectiontwo__logo{
+
+grid-template-columns: repeat(3,1fr);
+gap: 40px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+.sectionone__left{
+order: 1;
+
+}
+.sectionone__right{
+
+order: 0;
+
+}
+.sectionfour__left{
+
+order: 1;
+
+}
+.sectionfour__right{
+order: 0;
+
+
+}
+
+.sectionfive__cards{
+
+grid-template-columns: repeat(2,1fr);
+
+
+}
+
+}
+
+
+@media(max-width:576px){
+
+    .sectionfive__cards{
+
+        grid-template-columns: repeat(1,1fr);
+        
+
+
+}
+.sectiontwo__logo{
+
+    grid-template-columns: repeat(1,1fr);
+    gap: 40px;
+    }
+
+
+}

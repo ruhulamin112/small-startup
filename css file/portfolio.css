@@ -1,0 +1,49 @@
+.sectionone{
+
+display: grid;
+gap: 25px;
+margin-top: 30px;
+margin-bottom: 30px;
+
+}
+
+
+.sectionone__ content--text{
+font-size: var(--sub);
+font-family: var(--font-2);
+
+}
+
+.sectionone__images{
+
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 25px;
+
+
+}
+.sectionone__btn{
+
+justify-self: center;
+
+}
+
+
+
+
+
+
+@media (max-width:568px ){
+
+    .sectionone__images{
+grid-template-columns: repeat(1,1fr);
+
+
+    }
+
+
+}
+
+
+
+
